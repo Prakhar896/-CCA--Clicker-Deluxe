@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,102 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_CCA__Clicker_Deluxe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3E-xj-9HL">
+                                <rect key="frame" x="107" y="357" width="106" height="67"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="6vq-pS-5VK"/>
+                                    <constraint firstAttribute="height" constant="67" id="hfg-fL-hdP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="CLICK ME!">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FGk-sc-eUp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27q-9U-xWl">
+                                <rect key="frame" x="16" y="233" width="288" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep CLICKING!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8k-r4-3VS">
+                                <rect key="frame" x="16" y="92" width="288" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="27q-9U-xWl" firstAttribute="top" secondItem="v8k-r4-3VS" secondAttribute="bottom" constant="112" id="3Kw-Fd-Bke"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D3E-xj-9HL" secondAttribute="bottom" constant="144" id="Ep6-Xe-TuL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D3E-xj-9HL" secondAttribute="trailing" constant="107" id="WpB-GE-Pwm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v8k-r4-3VS" secondAttribute="trailing" constant="16" id="YLb-yc-ews"/>
+                            <constraint firstItem="D3E-xj-9HL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="aOm-Zh-940"/>
+                            <constraint firstItem="D3E-xj-9HL" firstAttribute="top" secondItem="27q-9U-xWl" secondAttribute="bottom" constant="100" id="cVK-Al-i7S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="27q-9U-xWl" secondAttribute="trailing" constant="16" id="dOp-ne-T6b"/>
+                            <constraint firstItem="v8k-r4-3VS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="quR-6q-d0S"/>
+                            <constraint firstItem="v8k-r4-3VS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="s9q-fc-Qzv"/>
+                            <constraint firstItem="27q-9U-xWl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zTu-sB-6BB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="clickMeButton" destination="D3E-xj-9HL" id="BB3-E9-tzr"/>
+                        <outlet property="keepClickingLabel" destination="v8k-r4-3VS" id="xsO-KA-BDr"/>
+                        <outlet property="numberLabel" destination="27q-9U-xWl" id="QeF-tV-qFK"/>
+                        <segue destination="NtH-VB-uSg" kind="presentation" identifier="congratsSegue" id="UWy-SS-hWu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="46.875" y="20.070422535211268"/>
+        </scene>
+        <!--Congrats View Controller-->
+        <scene sceneID="xnA-2Q-KWr">
+            <objects>
+                <viewController id="NtH-VB-uSg" customClass="CongratsViewController" customModule="_CCA__Clicker_Deluxe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lsz-KD-Ads">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="congratsImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="eko-NN-VUj">
+                                <rect key="frame" x="20" y="120" width="280" height="348"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="V9d-ya-E55" firstAttribute="bottom" secondItem="eko-NN-VUj" secondAttribute="bottom" constant="100" id="6m8-oS-2m3"/>
+                            <constraint firstItem="eko-NN-VUj" firstAttribute="leading" secondItem="V9d-ya-E55" secondAttribute="leading" constant="20" id="Tj8-Ko-LHo"/>
+                            <constraint firstItem="V9d-ya-E55" firstAttribute="trailing" secondItem="eko-NN-VUj" secondAttribute="trailing" constant="20" id="X8g-bo-fEw"/>
+                            <constraint firstItem="eko-NN-VUj" firstAttribute="top" secondItem="V9d-ya-E55" secondAttribute="top" constant="100" id="ocf-pp-lGs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V9d-ya-E55"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="rHo-NK-JTL" appends="YES" id="BcJ-Df-huP"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sxL-4k-WVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="rHo-NK-JTL">
+                    <connections>
+                        <action selector="screenSwipedDown:" destination="NtH-VB-uSg" id="qZP-C6-8ss"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="836.25" y="17.95774647887324"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="congratsImage.png" width="420" height="527"/>
+    </resources>
 </document>
